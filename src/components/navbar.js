@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import ResumeButton from "./resume-button";
-import {motion} from "framer-motion";
 
-function Navbar() {
+function Navbar(props) {
     const [sticked, passed] = useState(false)
 
     function hasPassed()
@@ -22,15 +21,14 @@ function Navbar() {
 
     return (
         <header className={sticked? `nav-header sticked` : `nav-header`}>
+            <img className="logo" src="" alt="logo"/>
             <nav>
-                <motion.ul className="nav-links"
-                           initial={{ opacity: 0, x:100 }}
-                           animate={{ opacity: 1, x: 0 }}
-                           transition={{ duration: .5 }}>
-                    <li><a href="#projects" className="hover-underline-animation">Projects</a></li>
-                    <li><a href="#skills" className="hover-underline-animation">Skills</a></li>
-                    <li><a href="#contact" className="hover-underline-animation">Contact</a></li>
-                </motion.ul>
+                <ul className="nav-links">
+                    <li><a href="" className="hover-underline-animation">Projects</a></li>
+                    <li><a href="" className="hover-underline-animation">Skills</a></li>
+                    <li><a href="" className="hover-underline-animation">Repositories</a></li>
+                    <li><a href="" className="hover-underline-animation">Contact</a></li>
+                </ul>
             </nav>
             <ResumeButton/>
         </header>
