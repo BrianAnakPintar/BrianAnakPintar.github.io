@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ResumeButton from "./resume-button";
+import logo from  "../logo.png";
 
 function Navbar(props) {
     const [sticked, passed] = useState(false)
@@ -21,13 +22,11 @@ function Navbar(props) {
 
     return (
         <header className={sticked? `nav-header sticked` : `nav-header`}>
-            <img className="logo" src="" alt="logo"/>
             <nav>
                 <ul className="nav-links">
-                    <li><a href="" className="hover-underline-animation">Projects</a></li>
-                    <li><a href="" className="hover-underline-animation">Skills</a></li>
-                    <li><a href="" className="hover-underline-animation">Repositories</a></li>
-                    <li><a href="" className="hover-underline-animation">Contact</a></li>
+                    <li><a href="#projects" className="hover-underline-animation">Projects</a></li>
+                    <li><a href="#skills" className="hover-underline-animation">Skills</a></li>
+                    <li><a href="#contact" className="hover-underline-animation">Contact</a></li>
                 </ul>
             </nav>
             <ResumeButton/>
