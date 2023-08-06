@@ -1,17 +1,46 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import Terminal from "./terminal";
 import FeaturedProject from "./featured-project";
 import {Grid, Spoiler} from "@mantine/core";
 import Card from "./Card";
 import IMAGES from "../Assets/IMAGES";
+import {motion, useAnimation, useInView} from "framer-motion";
 
-function Projects(props) {
+function Projects() {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("visible");
+        }
+    }, [isInView]);
+
     return (
         <div id="projects" className="projects-container">
             <div className="projects-title-container">
                 <div className="projects-title-text-part">
-                    <h1>FEATURED <span className="blue">PROJECTS.</span></h1>
-                    <p>Each project has been an exciting challenge, and I have loved every minute of it. I am always eager to take on new opportunities and push myself to the next level, and I can't wait to see what the future holds. Check out some of my most notable projects below!</p>
+                    <motion.h1
+                        ref={ref}
+                        variants={{
+                            hidden: { opacity: 0, y: 100},
+                            visible: { opacity: 1, y: 0},
+                        }}
+                        initial="hidden"
+                        animate={mainControls}
+                        transition={{duration: 0.5, delay: 0.1}}
+                    >FEATURED <span className="blue">PROJECTS.</span></motion.h1>
+                    <motion.p
+                        ref={ref}
+                        variants={{
+                            hidden: { opacity: 0, y: 100},
+                            visible: { opacity: 1, y: 0},
+                        }}
+                        initial="hidden"
+                        animate={mainControls}
+                        transition={{duration: 0.5, delay: 0.3}}
+                    >Each project has been an exciting challenge, and I have loved every minute of it. I am always eager to take on new opportunities and push myself to the next level, and I can't wait to see what the future holds. Check out some of my most notable projects below!</motion.p>
                 </div>
                 <div className="projects-title-img-part gone">
                     <Terminal title={"brian's-projects: ~ 2023"}

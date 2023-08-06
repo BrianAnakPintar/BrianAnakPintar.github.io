@@ -1,10 +1,30 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import {useRef} from "react";
+import {motion, useAnimation, useInView} from "framer-motion";
 
 function FeaturedProject(props) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("visible");
+        }
+    }, [isInView]);
+
     return (
-        <div className={`proj ${props.reversed ? "reversed" : ""}`}>
+        <motion.div className={`proj ${props.reversed ? "reversed" : ""}`}
+                    ref={ref}
+                    variants={{
+                        hidden: { opacity: 0, y: 200},
+                        visible: { opacity: 1, y: 0},
+                    }}
+        initial="hidden"
+        animate={mainControls}
+        transition={{duration: 0.25}}>
             <div className="proj-images">
-                <img className="img-project" src={props.imageLink}/>
+                <img alt="project image" className="img-project" src={props.imageLink}/>
             </div>
             <a target="_blank" href={props.link} className="proj-text">
             {/*<div className="proj-text">*/}
@@ -25,7 +45,7 @@ function FeaturedProject(props) {
                 {/*</div>*/}
             </div>
             </a>
-        </div>
+        </motion.div>
     );
 }
 

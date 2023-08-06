@@ -1,9 +1,9 @@
 import React from 'react';
 import Terminal from "./terminal";
 import { useDisclosure } from '@mantine/hooks';
-import { TextInput, Modal, Autocomplete, Table } from '@mantine/core';
+import { TextInput, Modal, Table } from '@mantine/core';
 
-function Skills(props) {
+function Skills() {
     const TAGS = ['Python', 'C#', 'C++', 'HTML', 'CSS', 'React', 'JavaScript'];
     const DURATION = 15000;
     const ROWS = 3;
@@ -122,6 +122,7 @@ function Skills(props) {
                 </div>
             </Modal>
             <div className="right-side-skill" onClick={open}>
+                <p style={{textAlign: "center"}}>view skills and course</p>
                     <Terminal title={"Skills | C L I C K - M E |"}
                               input={"skills"}
                               body={"CLICK HERE to view skills and relevant coursework..."}
