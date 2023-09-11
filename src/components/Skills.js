@@ -42,8 +42,8 @@ function Skills() {
         { code: 'MATH 221', institution: 'UBC', Progress: 'Completed', name: 'Matrix Algebra' },
         { code: 'MATH 302', institution: 'UBC', Progress: 'Completed', name: 'Introduction to Probability'},
         { code: 'DSCI 100', institution: 'UBC', Progress: 'Completed', name: 'Introduction to Data Science'},
-        { code: 'STAT 200', institution: 'UBC', Progress: 'Completed', name: 'Elementary Statistics'},
-        { code: 'STAT 201', institution: 'UBC', Progress: 'Completed', name: 'Statistical Inference for Data Science'},
+        { code: 'STAT 200', institution: 'UBC', Progress: 'Current', name: 'Elementary Statistics'},
+        { code: 'STAT 201', institution: 'UBC', Progress: 'Current', name: 'Statistical Inference for Data Science'},
 
 
     ];
