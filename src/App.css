@@ -632,6 +632,9 @@ html{
   background: #0087ca;
 }
 
+.redHover:hover {
+  border: #cb4a4a 0.2em solid !important;
+}
 
 .bn5 {
   padding: .5rem 1.5rem;

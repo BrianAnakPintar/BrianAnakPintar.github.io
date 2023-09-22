@@ -42,10 +42,6 @@ function Skills() {
         { code: 'MATH 221', institution: 'UBC', Progress: 'Completed', name: 'Matrix Algebra' },
         { code: 'MATH 302', institution: 'UBC', Progress: 'Completed', name: 'Introduction to Probability'},
         { code: 'DSCI 100', institution: 'UBC', Progress: 'Completed', name: 'Introduction to Data Science'},
-        { code: 'STAT 200', institution: 'UBC', Progress: 'Current', name: 'Elementary Statistics'},
-        { code: 'STAT 201', institution: 'UBC', Progress: 'Current', name: 'Statistical Inference for Data Science'},
-
-
     ];
 
     const rows = courses.map((course) => (
@@ -125,11 +121,11 @@ function Skills() {
             </Modal>
             <div className="right-side-skill" onClick={open}>
                 <p style={{textAlign: "center"}}>view skills and course</p>
-                    <Terminal title={"Skills | C L I C K - M E |"}
-                              input={"skills"}
-                              body={"CLICK HERE to view skills and relevant coursework..."}
-                              skillVisibility={"flex"}
-                              projectVisibility={"none"}/>
+                <Terminal title={"Skills | C L I C K - M E |"}
+                          input={"skills"}
+                          body={"CLICK HERE to view skills and relevant coursework..."}
+                          skillVisibility={"flex"}
+                          projectVisibility={"none"}/>
             </div>
 
         </div>

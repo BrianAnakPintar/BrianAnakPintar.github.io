@@ -60,8 +60,8 @@ function Projects() {
                     link="https://github.com/BrianAnakPintar/TARA"
                 />
                 <FeaturedProject
-                    Title="Procedural Animation"
-                    Subtitle="Procedurally robot walk animation made in Unity"
+                    Title="Procedural Walk Animation"
+                    Subtitle="Procedurally generated robot walk animation made in Unity"
                     desc="A simple procedurally generated robot walk animation made in Unity which interacts accordingly with the environment, utilizing raycasts, physics and Inverse Kinematics (IK)."
                     codes={['Unity', 'C#']}
                     imageLink={IMAGES.proceduralWalk}
@@ -79,41 +79,54 @@ function Projects() {
             <div className="archive">
                 <h3>Here's an archive of some of my other personal projects</h3>
                 <Spoiler maxHeight={260} showLabel="View More" hideLabel="Hide">
-                        <Grid justify={"center"} align={"center"} gutter={""}>
-                            <Grid.Col lg={4}>
-                                <Card title={"VR Interview Simulator"}
-                                      hasLink
-                                      link={"https://devpost.com/software/virtualprep"}
-                                      desc={"An interview simulator made for the NWHacks 2022 in VR. Made to allow users to practice and receive feedback from their "}/>
-                                <br/>
-                                <Card title={"You're Hired"}
-                                      hasLink
-                                      link={"https://briananakpintar.itch.io/youre-hired"}
-                                      desc={"A simple game made in Unity where players play as a hiring manager and tasked with admitting and rejecting applicants based on randomly generated criterias."}/>
-                            </Grid.Col>
+                    <Grid justify={"center"} align={"center"} gutter={""}>
+                        <Grid.Col lg={4}>
+                            <Card title={"VR Interview Simulator"}
+                                  hasLink
+                                  link={"https://devpost.com/software/virtualprep"}
+                                  desc={"An interview simulator made for the NWHacks 2022 in VR. Made to allow users to practice and receive feedback from their "}/>
+                            <br/>
+                            <Card title={"You're Hired"}
+                                  hasLink
+                                  link={"https://briananakpintar.itch.io/youre-hired"}
+                                  desc={"A simple game made in Unity where players play as a hiring manager and tasked with admitting and rejecting applicants based on randomly generated criterias."}/>
+                            <br/>
+                            <Card title={"EyeQ"}
+                                  hasLink
+                                  link={"https://devpost.com/software/eyeq"}
+                                  desc={"By continuously tracking your eye movements, EyeQ offers a data-driven approach that empowers you to optimize your learning process and stay engaged with your coursework."}/>
+                        </Grid.Col>
 
-                            <Grid.Col lg={4}>
-                                <Card title={"Heart Disease Predictor"}
-                                      hasLink
-                                      link={"https://github.com/BrianAnakPintar/DSCI100-HeartDisease"}
-                                      desc={"Used KNN classification to identify heart disease based on given predictors."}/>
+                        <Grid.Col lg={4}>
+                            <Card title={"Heart Disease Predictor"}
+                                  hasLink
+                                  link={"https://github.com/BrianAnakPintar/DSCI100-HeartDisease"}
+                                  desc={"Used KNN classification to identify heart disease based on given predictors."}/>
 
-                                <br/>
-                                <Card title={"Course Notifier"}
-                                      desc={"Console based Python application that notifies you when a specified course has available seats."}/>
-                            </Grid.Col>
+                            <br/>
+                            <Card title={"Course Notifier"}
+                                  desc={"Console based Python application that notifies you when a specified course has available seats."}/>
+                            <br/>
+                            <Card title={"BlueNav"}
+                                  desc={"Webapp made with the people at UBC LaunchPad."}/>
+                        </Grid.Col>
 
-                            <Grid.Col lg={4}>
-                                <Card title={"Schedule Comparer"}
-                                      hasLink
-                                      link={"https://github.com/BrianAnakPintar/ScheduleComparer"}
-                                      desc={"Java application which allows users to compare their schedule to see overlapping free-time in their schedules."} />
-                                <br/>
-                                <Card title={"Function Optimizer"}
-                                      desc={"Used the least-squares solution to find the best parameters for a linear function, for specified data points. (Ongoing Project)"}/>
-                            </Grid.Col>
+                        <Grid.Col lg={4}>
+                            <Card title={"Schedule Comparer"}
+                                  hasLink
+                                  link={"https://github.com/BrianAnakPintar/ScheduleComparer"}
+                                  desc={"Java application which allows users to compare their schedule to see overlapping free-time in their schedules."} />
+                            <br/>
+                            <Card title={"Function Optimizer"}
+                                  hasLink
+                                  link={"https://github.com/BrianAnakPintar/FunctionOptimizer"}
+                                  desc={"Used the least-squares solution to find the best parameters for a linear function, for specified data points. (Ongoing Project)"}/>
+                            <br/>
+                            <Card title={"Custom Shell"}
+                                  desc={"A custom made shell and terminal made using C++. (Ongoing project)"}/>
+                        </Grid.Col>
 
-                        </Grid>
+                    </Grid>
 
                 </Spoiler>
             </div>
