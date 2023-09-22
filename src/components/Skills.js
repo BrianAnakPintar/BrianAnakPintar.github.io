@@ -40,10 +40,8 @@ function Skills() {
         { code: 'CPSC 213', institution: 'UBC', Progress: 'Current', name: 'Introduction to Computer Systems'},
         { code: 'MATH 200', institution: 'UBC', Progress: 'Completed', name: 'Calculus III' },
         { code: 'MATH 221', institution: 'UBC', Progress: 'Completed', name: 'Matrix Algebra' },
-        { code: 'MATH 302', institution: 'UBC', Progress: 'Current', name: 'Introduction to Probability'},
+        { code: 'MATH 302', institution: 'UBC', Progress: 'Completed', name: 'Introduction to Probability'},
         { code: 'DSCI 100', institution: 'UBC', Progress: 'Completed', name: 'Introduction to Data Science'},
-
-
     ];
 
     const rows = courses.map((course) => (
