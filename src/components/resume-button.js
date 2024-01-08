@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from "../Assets/BrianMoniagaResume.pdf";
+import resume from "../BrianMoniagaResume.pdf";
 
 function ResumeButton(props) {
     return (
