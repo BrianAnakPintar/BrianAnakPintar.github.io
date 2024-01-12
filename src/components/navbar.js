@@ -30,6 +30,7 @@ function Navbar() {
                     <li><a href="#projects" className="hover-underline-animation">Projects</a></li>
                     <li><a href="#skills" className="hover-underline-animation">Skills</a></li>
                     <li><a href="#contact" className="hover-underline-animation">Contact</a></li>
+                    <li><a href="/Blog" className="hover-underline-animation">Blogs</a></li>
                 </motion.ul>
             </nav>
             <ResumeButton/>
