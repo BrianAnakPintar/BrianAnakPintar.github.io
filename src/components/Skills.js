@@ -38,13 +38,13 @@ function Skills() {
         { code: 'CPSC 210', institution: 'UBC', Progress: 'Completed', name: 'Software Construction' },
         { code: 'CPSC 221', institution: 'UBC', Progress: 'Completed', name: 'Basic Algorithm and Data Structures'},
         { code: 'CPSC 213', institution: 'UBC', Progress: 'Completed', name: 'Introduction to Computer Systems'},
-        { code: 'CPSC 313', institution: 'UBC', Progress: 'Completed', name: 'Computer Hardware and Operating Systems'},
-        { code: 'CPSC 317', institution: 'UBC', Progress: 'Completed', name: 'Introduction to Computer Networking'},
-        { code: 'CPSC 340', institution: 'UBC', Progress: 'Completed', name: 'Machine Learning and Data Mining'},
+        { code: 'CPSC 313', institution: 'UBC', Progress: 'Current', name: 'Computer Hardware and Operating Systems'},
+        { code: 'CPSC 317', institution: 'UBC', Progress: 'Current', name: 'Introduction to Computer Networking'},
+        { code: 'CPSC 340', institution: 'UBC', Progress: 'Current', name: 'Machine Learning and Data Mining'},
         { code: 'MATH 200', institution: 'UBC', Progress: 'Completed', name: 'Calculus III' },
         { code: 'MATH 221', institution: 'UBC', Progress: 'Completed', name: 'Matrix Algebra' },
         { code: 'MATH 302', institution: 'UBC', Progress: 'Completed', name: 'Introduction to Probability'},
-        { code: 'MATH 307', institution: 'UBC', Progress: 'Completed', name: 'Applied Linear Algebra'},
+        { code: 'MATH 307', institution: 'UBC', Progress: 'Current', name: 'Applied Linear Algebra'},
         { code: 'DSCI 100', institution: 'UBC', Progress: 'Completed', name: 'Introduction to Data Science'},
     ];
 
