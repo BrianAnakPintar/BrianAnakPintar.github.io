@@ -7,21 +7,22 @@ function Homepage() {
         <div className="homepage-div">
             <div className="homepage-container">
                 <div className="homepage-img">
-                <BrianLogo animate={true}/>
+                {/*<BrianLogo animate={true}/>*/}
                 </div>
                 <div className="homepage-text-part">
                     <motion.h1
                         initial={{ opacity: 0, y:100 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.75 }}
-                    >Hi<span className="blue">,</span> my name is <br className="gone"></br>
+                    >Hi<span className="blue">,</span> my name is
                         Brian<span style={{color:"#0087ca"}}>.</span></motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y:50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: .75, delay: .5 }}
-                    >I am currently an undergraduate student majoring in Computer Science and Statistics at The University of British Columbia. I am
-                        interested in software development and data science as a whole.</motion.p>
+                    >I am an undergraduate student at the University of British Columbia majoring in Honours Computer Science.<br/>
+                        I usually don't update this site. But when I do, I like to yap about some of the stuff I make.
+                    </motion.p>
                 {/*    Add buttons for social media (github, etc.) here*/}
                 </div>
             </div>

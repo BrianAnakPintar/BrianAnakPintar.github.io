@@ -417,7 +417,6 @@ html{
 .proj-images{
   width: 60%;
   background: white;
-  border-radius: 1rem;
   position: relative;
   transform: translateX(-1.5rem);
   z-index: -1;
@@ -431,7 +430,6 @@ html{
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 1rem;
 }
 
 .proj-description{
@@ -910,4 +908,45 @@ html{
   .contacts {
     height: 90vh;
   }
+}
+
+.button_line {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.button_line {
+  --primary-color: #0087ca;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.button_line p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+
+.button_line:hover svg {
+  transform: translateX(4px);
+}
+
+.button_line svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+.word-wrap {
+  word-wrap: break-word;
+  white-space: normal;
 }
