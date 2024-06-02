@@ -69,16 +69,7 @@ function Projects() {
         <div id="projects" className="projects-container">
             <div className="projects-title-container">
                 <div className="projects-title-text-part">
-                    <motion.h1
-                        ref={ref}
-                        variants={{
-                            hidden: { opacity: 0, y: 100},
-                            visible: { opacity: 1, y: 0},
-                        }}
-                        initial="hidden"
-                        animate={mainControls}
-                        transition={{duration: 0.5, delay: 0.1}}
-                    >Featured <span className="blue">Projects.</span></motion.h1>
+                    <h1>Featured <span className="blue">Projects.</span></h1>
                     <motion.p
                         ref={ref}
                         variants={{
@@ -106,7 +97,7 @@ function Projects() {
                     codes={['C++', 'CMake', 'FTXUI', 'GoogleTest']}
                     imageLink={IMAGES.step}
                     link="https://github.com/BrianAnakPintar/step-writer/"
-                    blogLink="Blog/posts/StepWriter"
+                    blogLink="https://www.brianmoniaga.com/Blog/posts/stepwriter/"
                 />
                 <FeaturedProject
                     Title="Procedural Walk Animation"
