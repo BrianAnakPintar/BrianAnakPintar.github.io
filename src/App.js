@@ -5,6 +5,7 @@ import Projects from "./components/projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import { MantineProvider } from '@mantine/core';
+import Blogs from "./components/Blogs";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
               <Homepage/>
               <Navbar/>
               <Projects/>
-              <Skills/>
+              <Blogs/>
               <Contact/>
           </div>
       </MantineProvider>
