@@ -1,12 +1,7 @@
-import React from 'react';
-import resume from "../Brian_Moniaga_Resume.pdf";
-
-function ResumeButton(props) {
+function ResumeButton() {
     return (
-        <a href={resume} target="_blank">
-        <button className="resume-button">
-            Resume
-        </button>
+        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="resume-button">Resume</button>
         </a>
     );
 }

@@ -27,6 +27,7 @@ function Navbar() {
                            initial={{ opacity: 0, x:100 }}
                            animate={{ opacity: 1, x: 0 }}
                            transition={{ duration: .5 }}>
+                    <li><a href="#about" className="hover-underline-animation">About</a></li>
                     <li><a href="#projects" className="hover-underline-animation">Projects</a></li>
                     {/*<li><a href="#skills" className="hover-underline-animation">Skills</a></li>*/}
                     <li><a href="#contact" className="hover-underline-animation">Contact</a></li>

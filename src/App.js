@@ -2,10 +2,10 @@ import './App.css';
 import Navbar from "./components/navbar";
 import Homepage from "./components/homepage";
 import Projects from "./components/projects";
-import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import { MantineProvider } from '@mantine/core';
 import Blogs from "./components/Blogs";
+import AboutPage from './components/about';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <div className="App">
               <Homepage/>
               <Navbar/>
+              <AboutPage/>
               <Projects/>
               <Blogs/>
               <Contact/>

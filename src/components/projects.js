@@ -5,6 +5,7 @@ import IMAGES from "../Assets/IMAGES";
 import {motion, useAnimation, useInView} from "framer-motion";
 import {Modal, Table, Button} from "@mantine/core";
 import {useDisclosure} from "@mantine/hooks";
+import BentoBox from './BentoBox';
 
 function Projects() {
     const ref = useRef(null);
@@ -29,11 +30,9 @@ function Projects() {
             desc: 'A tool for to generate the best fit line given several data points purely written in C# without any libraries. (Linear and non-linear regression)' },
         { title: 'Schedule Comparer', link: 'https://github.com/BrianAnakPintar/ScheduleComparer', tools: 'Java, Java Swing, JUnit',
             desc: 'A tool used for students to visualize their schedule and find overlapping time slots with other students.' },
-        { title: 'Mercury', link: 'https://github.com/BrianAnakPintar/Mercury', tools: 'Rust, Termion',
-            desc: 'A text-editor project adapted from Hecto used to understand how Rust works.' },
         { title: 'Calculated', link: 'https://briananakpintar.itch.io/calculated', tools: 'Unity, C#',
             desc: 'A game where users choose appropriate operators to make valid math equations for GMTK 2021 Game Jam.' },
-        { title: 'EyeQ', link: 'https://devpost.com/software/eyeq', tools: 'Python, HTML, CSS, OpenCV, Taipy, Cohere, Coackroach DB',
+        { title: 'EyeQ', link: 'https://devpost.com/software/eyeq', tools: 'Python, OpenCV, Taipy, Cohere',
             desc: 'An app that monitors your eye movements to determine when you\'re not paying attention and creates summaries at those points.' },
         { title: 'Heart Disease Predictor', link: 'https://github.com/BrianAnakPintar/DSCI100-HeartDisease', tools: 'R, TidyVerse',
             desc: 'KNN classification to predict if a person has a heart disease. Term project for DSCI 100' },
@@ -68,57 +67,36 @@ function Projects() {
     return (
         <div id="projects" className="projects-container">
             <div className="projects-title-container">
-                <div className="projects-title-text-part">
-                    <h1>Featured <span className="blue">Projects.</span></h1>
-                    <motion.p
-                        ref={ref}
-                        variants={{
-                            hidden: { opacity: 0, y: 100},
-                            visible: { opacity: 1, y: 0},
-                        }}
-                        initial="hidden"
-                        animate={mainControls}
-                        transition={{duration: 0.5, delay: 0.3}}
-                    >Here's some things that I enjoyed writing!</motion.p>
-                </div>
-                <div className="projects-title-img-part gone">
-                    <Terminal title={"some:"}
-                              input={"> (venv) brian:"}
-                              body={"ls projects"}
-                              skillVisibility={"none"}
-                              projectVisibility={"flex"}/>
-                </div>
+                <h1>Here's a list of some fun stuff I've made.</h1>
             </div>
             <div className="list-projects">
-                <FeaturedProject
-                    Title="STEP - Writer"
-                    Subtitle="Scuffed Text Editor Program - Writer"
-                    desc="A lightweight terminal-based text editor made in C++ with Vim-like motions, as well as syntax highlighting."
-                    codes={['C++', 'CMake', 'FTXUI', 'GoogleTest']}
-                    imageLink={IMAGES.step}
-                    link="https://github.com/BrianAnakPintar/step-writer/"
-                    blogLink="https://www.brianmoniaga.com/Blog/posts/stepwriter/"
-                />
-                <FeaturedProject
-                    Title="Procedural Walk Animation"
-                    Subtitle="Procedurally generated robot walk animation made in Unity"
-                    desc="A simple procedurally generated robot walk animation made in Unity which interacts accordingly with the environment, utilizing raycasts, physics and Inverse Kinematics (IK)."
-                    codes={['Unity', 'C#']}
-                    imageLink={IMAGES.proceduralWalk}
-                    reversed
-                    link="https://github.com/BrianAnakPintar/Procedural-Animation"/>
-                <FeaturedProject
-                    Title="TARA"
-                    Subtitle="The Amazing Rating Application"
-                    desc="A web application for students to rate and review their teachers. It is designed to provide feedback for teachers regarding their teaching style and effectiveness."
-                    codes={['Django', 'Python', 'HTML', 'CSS', 'JavaScript', 'SQLite']}
-                    imageLink={IMAGES.tara}
-                    link="https://github.com/BrianAnakPintar/TARA"
-                />
+                <div className='project-entry'>
+                        <h1>Koala Tree</h1>
+                        <img className="project-img" src="https://github.com/BrianAnakPintar/step-writer/blob/main/Docs/ThemesStacked.png?raw=true"/>
+                        <h3>A file manager written in Go.</h3>
+                        <p>
+                            A simple file manager written using Wails. The main motivation of this project is because the default mac finder creates .DS_Store files which annoys me.
+                        </p>
+                </div> 
+                <div className='project-entry'>
+                    <h1>STEP - Writer</h1>
+                    <img className="project-img" src="https://github.com/BrianAnakPintar/step-writer/blob/main/Docs/ThemesStacked.png?raw=true"/>
+                    <h3>A TUI text editor written in C++.</h3>
+                    <p>
+                        A vim-like text editor which runs in the terminal and has features such as vim motions, syntax highlighting, file trees, etc.
+                    </p>
+                </div> 
+                <div className='project-entry'>
+                    <h1>Tales of Player One</h1>
+                    <img className="project-img" src="https://github.com/BrianAnakPintar/TalesOfPlayerOne/raw/main/Docs/gameplay.gif"/>
+                    <h3>A collection of minigames to test my game engine.</h3>
+                    <p>
+                        A series of 2D minigames in C++ such as tetris, and platformers created by using a custom game engine in SFML
+                    </p>
+                </div>
             </div>
 
             <div className="archive">
-                <h2>For an archive of all projects that I have worked on...</h2>
                 <p>Below shows a table of most of the public projects that I have worked on excluding the three above. <br/>
                     I try to include as much as I can but not all projects can have links to them unfortunately.</p>
                 <br/>
