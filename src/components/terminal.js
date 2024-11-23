@@ -8,7 +8,7 @@ function Terminal(props) {
     const skillVisibility = props.skillVisibility;
 
     return (
-        <div className="container">
+        <div className="terminal-container">
             <div className="container_terminal"></div>
             <div className="terminal_toolbar">
                 <div className="butt">

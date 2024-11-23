@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 
 function Blogs() {
     return (
-        <div className="skills">
+        <div className="about-container">
 
         <div className="homepage-text-part">
             <motion.h1
@@ -19,7 +19,7 @@ function Blogs() {
             >If you would like to hear me yap about a lot of things, feel free to take a look at my blogs! <br/>
                 Inside it you can find a collection of my thoughts ranging from courses, projects to my daily struggles :(
             </motion.p>
-            <a href="/Blog">
+            <a className='btn_blog' href="/Blog">
                 <button className="button_line">
                     <p>Visit Blogs</p>
                     <svg
@@ -28,11 +28,11 @@ function Blogs() {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        stroke-width="4"
+                        strokeWidth="4"
                     >
                         <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                             d="M14 5l7 7m0 0l-7 7m7-7H3"
                         ></path>
                     </svg>

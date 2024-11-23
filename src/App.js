@@ -6,10 +6,12 @@ import Contact from "./components/Contact";
 import { MantineProvider } from '@mantine/core';
 import Blogs from "./components/Blogs";
 import AboutPage from './components/about';
+import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 
 function App() {
   return (
-      <MantineProvider theme={{ colorScheme: 'dark' }}>
+      <MantineProvider defaultColorScheme="dark">
           <div className="App">
               <Homepage/>
               <Navbar/>
