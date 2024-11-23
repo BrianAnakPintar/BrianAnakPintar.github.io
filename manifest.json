@@ -1,20 +1,20 @@
 {
-  "short_name": "Brian Fransis Moniaga",
-  "name": "Personal Portfolio site",
+  "short_name": "Brian Moniaga",
+  "name": "Brian's Personal Portfolio site",
   "icons": [
     {
-      "src": "owl.ico",
+      "src": "serie_transparent.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "owl.png",
-      "type": "image/png",
+      "src": "serie_transparent.ico",
+      "type": "image/x-icon",
       "sizes": "192x192"
     },
     {
-      "src": "owl.png",
-      "type": "image/png",
+      "src": "serie_transparent.ico",
+      "type": "image/x-icon",
       "sizes": "512x512"
     }
   ],
