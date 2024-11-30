@@ -1,21 +1,8 @@
-import React, {useEffect, useRef} from 'react';
-import {motion, useAnimation, useInView} from "framer-motion";
+import React from 'react';
 import { EnvelopeOpenIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import SocialButton from './social-button';
 
 function Contact() {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
-    const mainControls = useAnimation();
-    const slideAnim = useAnimation();
-
-    useEffect(() => {
-        if (isInView) {
-            mainControls.start("visible");
-            slideAnim.start("visible")
-        }
-    }, [isInView]);
-
     return (
         <div className="homepage-div">
             <div className="homepage-container">

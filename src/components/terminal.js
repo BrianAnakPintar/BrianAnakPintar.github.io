@@ -1,11 +1,8 @@
 import React from 'react';
-import {Skeleton} from "@mantine/core";
 
 function Terminal(props) {
     const title = props.title;
     const input = props.input;
-    const body = props.body;
-    const skillVisibility = props.skillVisibility;
 
     return (
         <div className="terminal-container">
@@ -25,9 +22,9 @@ function Terminal(props) {
                     <span className="terminal_bling">cat fun_facts.txt</span>
                 </div>
                 <ul>
-                    <li> I really like teaching.</li>
+                    <li> I like teaching.</li>
                     <li> I like to cook.</li>
-                    <li> I use vim, btw.</li>
+                    <li> I use neovim, btw.</li>
                 </ul>
                     <div className="terminal_promt">
                     <span className="terminal_user">{input}</span>
