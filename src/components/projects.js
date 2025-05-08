@@ -86,7 +86,7 @@ const Projects = () => {
         <p>
           I noticed the projects I listed all use C++ lol. You can find other
           projects with varying tech stack on my{" "}
-          <a href="hhttps://github.com/BrianAnakPintar" target="_blank">
+          <a href="https://github.com/BrianAnakPintar" target="_blank">
             GitHub
           </a>
           . I promise I don't only code in C++.
