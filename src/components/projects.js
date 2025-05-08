@@ -1,21 +1,10 @@
 import React from "react";
-import { Carousel } from "@mantine/carousel";
 import { GitHubLogoIcon, GlobeIcon } from "@radix-ui/react-icons";
 import { Globe } from "lucide-react";
 
-const Projects = () => {
-  // Sample project data
-  const projects = [
-    {
-      title: "STEP - Writer",
-      img: "https://github.com/BrianAnakPintar/step-writer/blob/main/Docs/ThemesStacked.png?raw=true",
-      description: "A terminal text editor.",
-      details:
-        "A vim-like text editor which runs in the terminal and has features such as vim motions, syntax highlighting, etc.",
-      link: "https://github.com/BrianAnakPintar/step-writer",
-    },
-  ];
+import IMAGES from "../Assets/IMAGES";
 
+const Projects = () => {
   return (
     <div id="projects" className="projects-container">
       <div className="homepage-text-part">
@@ -29,13 +18,7 @@ const Projects = () => {
 
       <div className="project-list">
         <div className="project-item">
-          <img
-            className="project-img"
-            src="
-            https://private-user-images.githubusercontent.com/116947297/432027490-979d2ca2-5f47-4e9a-b958-d94dad0b034d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY2ODIyOTUsIm5iZiI6MTc0NjY4MTk5NSwicGF0aCI6Ii8xMTY5NDcyOTcvNDMyMDI3NDkwLTk3OWQyY2EyLTVmNDctNGU5YS1iOTU4LWQ5NGRhZDBiMDM0ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUwOFQwNTI2MzVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05Yjk4NjM0YmQ3OTcxZDY1OGUwZmEzZmE0MDZhZDVkN2M1Y2IyOTFlOWU2MWVhYTkxMTBmYjNhMGMyOGUyMzA2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Si7CCcjl5KH2gIq7jdrvZgFdw9fmGzkJ-1X7VBQqnqI
-            "
-            alt="bnuuy"
-          />
+          <img className="project-img" alt="bnuuy" src={IMAGES.bnuuy} />
           <div className="project-detail">
             <h2>
               Bnuuy's Ship{" "}
