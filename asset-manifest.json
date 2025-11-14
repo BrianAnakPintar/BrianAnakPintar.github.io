@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ba5bcec0.css",
-    "main.js": "/static/js/main.870caf1b.js",
+    "main.js": "/static/js/main.880f7db1.js",
     "static/media/snorlax-rotate.gif": "/static/media/snorlax-rotate.46986c1dd92d4509a632.gif",
     "static/media/tarademo.gif": "/static/media/tarademo.558692daeb6f98c0e44d.gif",
     "static/media/procedural-anim.gif": "/static/media/procedural-anim.2ca0c6b1d27baccf01ae.gif",
@@ -12,10 +12,10 @@
     "static/media/Calculated.jpg": "/static/media/Calculated.eaec61b593064651f808.jpg",
     "index.html": "/index.html",
     "main.ba5bcec0.css.map": "/static/css/main.ba5bcec0.css.map",
-    "main.870caf1b.js.map": "/static/js/main.870caf1b.js.map"
+    "main.880f7db1.js.map": "/static/js/main.880f7db1.js.map"
   },
   "entrypoints": [
     "static/css/main.ba5bcec0.css",
-    "static/js/main.870caf1b.js"
+    "static/js/main.880f7db1.js"
   ]
 }
