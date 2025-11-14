@@ -402,7 +402,9 @@ button {
 
 .project-img {
     max-width: 100%;
+    width: 100%;
     max-width: 350px;
+    height: auto;
     max-height: 265px;
     border-radius: 0.5rem;
 }
@@ -707,7 +709,7 @@ button {
 /*Responsiveness Code*/
 @media (max-width: 1000px) {
     body {
-        text-align: center !important;
+        text-align: center;
     }
 
     .btn_blog {
@@ -887,6 +889,61 @@ button {
     }
 }
 
+/* Projects responsiveness: stack project items and scale images on small screens */
+@media (max-width: 900px) {
+    .projects-container {
+        padding: 4rem 1rem;
+    }
+
+    .project-list {
+        gap: 3rem;
+    }
+
+    .project-item {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-detail {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .project-img {
+        max-width: 80%;
+        max-height: 220px;
+        width: auto;
+    }
+
+    .projects-container {
+        padding: 2rem 0.5rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .homepage-text-part h1 {
+        font-size: 1.6rem;
+    }
+
+    .project-img {
+        max-width: 95%;
+        max-height: 180px;
+    }
+
+    .project-detail p {
+        font-size: 0.95rem;
+    }
+}
+
 .button_line {
     border: none;
     background: none;
@@ -945,6 +1002,90 @@ button {
     justify-content: center;
     width: 75%;
     gap: 2rem;
+}
+
+.about-text p {
+    font-size: 1.05rem;
+    color: #b4b4b4;
+    margin: 0 0 0.75rem 0;
+    line-height: 1.6;
+}
+
+/* make image size flexible instead of fixed; clamp sets min, preferred, max */
+.about-img {
+    width: clamp(140px, 30vw, 320px);
+    height: auto;
+    border-radius: 5%;
+    display: block;
+}
+
+.about-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .about-smaller-container {
+        width: 90%;
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .about-container {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .about-img {
+        width: clamp(110px, 40vw, 220px);
+    }
+
+    .homepage-text-part h1 {
+        font-size: 1.6rem;
+    }
+
+    /* On very small screens, left-align text for readability */
+    .about-text,
+    .about-text p,
+    .about-text ul {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 92%;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-smaller-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homepage-text-part {
+        width: 100%;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    /* smaller image on tablets */
+    .about-img {
+        width: clamp(120px, 28vw, 260px);
+    }
+
+    /* ensure the image wrapper centers content when stacked or very small */
+    .about-img-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 620px) {
+    
 }
 
 .bento-box {

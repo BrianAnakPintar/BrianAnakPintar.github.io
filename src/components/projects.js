@@ -1,6 +1,4 @@
-import React from "react";
 import { GitHubLogoIcon, GlobeIcon } from "@radix-ui/react-icons";
-import { Globe } from "lucide-react";
 
 import IMAGES from "../Assets/IMAGES";
 

@@ -23,8 +23,7 @@ function Terminal(props) {
         </div>
         <ul>
           <li> I use neovim, btw</li>
-          <li> I work at google, btw</li>
-          <li> I make projects as an excuse to use nvim</li>
+          <li> code monkey</li>
         </ul>
         <div className="terminal_promt">
           <span className="terminal_user">{input}</span>
