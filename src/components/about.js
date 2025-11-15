@@ -23,7 +23,7 @@ function AboutPage() {
               <p>Fun facts about me:</p>
 
               <ul>
-                <li>I like board games.</li>
+                <li>I like board games!</li>
                 <li>Snorlax is my spirit animal.</li>
                 <li>Frieren is peak.</li>
               </ul>
